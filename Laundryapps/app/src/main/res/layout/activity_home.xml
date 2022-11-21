@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/blue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home_activity">
+
+
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        app:srcCompat="@drawable/logo1" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/shape">
+
+        <ImageView
+            android:id="@+id/laundry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/laundry" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textlogo"
+                android:fontFamily="@font/roboto"
+                android:text="CLEANING DAY"
+                android:textSize="40sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="-150dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textjudul"
+            android:text="LAUNDRY"
+            android:textSize="40sp"
+            android:textColor="@color/biru"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/shape"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/activity_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/biru"
+            android:textSize="18sp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Mobile Apps"
+            android:onClick="pindah"
+            android:textStyle="bold"
+            tools:ignore="UsingOnClickInXml" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
